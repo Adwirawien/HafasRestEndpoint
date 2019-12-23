@@ -1,0 +1,12 @@
+{
+  "name": "HafasRestEndpoint",
+  "version": "1.0.0",
+  "description": "hafas-client instance as an HTTP REST API.",
+  "main": "index.js",
+  "repository": "https://github.com/Adwirawien/HafasRestEndpoint.git",
+  "author": "Adwirawien <hannsadrian@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hafas-client": "^4.6.2"
+  }
+}

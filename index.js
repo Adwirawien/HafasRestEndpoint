@@ -5,7 +5,7 @@ const bvgProfile = require("hafas-client/p/bvg");
 const dbProfile = require("hafas-client/p/db");
 
 const bvgConfig = {
-  hostname: "bvg.api.transportflow.online",
+  hostname: "bvg.transportflow.de",
   port: 3000,
   name: "hafas-rest-endpoint",
   homepage: "https://github.com/Adwirawien/HafasRestEndpoint",
@@ -14,7 +14,7 @@ const bvgConfig = {
   docsLink: " "
 };
 const dbConfig = {
-  hostname: "db.api.transportflow.online",
+  hostname: "db.transportflow.de",
   port: 3001,
   name: "hafas-rest-endpoint",
   homepage: "https://github.com/Adwirawien/HafasRestEndpoint",

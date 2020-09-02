@@ -8,6 +8,6 @@
   "license": "MIT",
   "dependencies": {
     "hafas-client": "^5.7.0",
-    "hafas-rest-api": "^2.1.4"
+    "hafas-rest-api": "3.4.0"
   }
 }

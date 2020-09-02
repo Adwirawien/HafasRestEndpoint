@@ -147,6 +147,11 @@ create-hash@^1.2.0:
     ripemd160 "^2.0.1"
     sha.js "^2.4.0"
 
+date-fns@^2.12.0:
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.16.1.tgz#05775792c3f3331da812af253e1a935851d3834b"
+  integrity sha512-sAJVKx/FqrLYHAQeN7VpJrPhagZc9R4ImZIWYRFZaaohR3KzmuK88touwsSwSVT8Qcbd4zoDsnGfX4GFB4imyQ==
+
 debug@2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -173,6 +178,11 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
+
+"emoji-regex@>=6.0.0 <=6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-6.1.1.tgz#c6cd0ec1b0642e2a3c67a1137efc5e796da4f88e"
+  integrity sha1-xs0OwbBkLio8Z6ETfvxeeW2k+I4=
 
 encodeurl@~1.0.2:
   version "1.0.2"
@@ -289,6 +299,13 @@ fresh@0.5.2:
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
 
+github-slugger@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-1.3.0.tgz#9bd0a95c5efdfc46005e82a906ef8e2a059124c9"
+  integrity sha512-gwJScWVNhFYSRDvURk/8yhcFBee6aFjye2a7Lhb2bUyRulpIoek9p0I9Kt7PT67d/nUlZbFu8L9RLiA0woQN8Q==
+  dependencies:
+    emoji-regex ">=6.0.0 <=6.1.1"
+
 google-polyline@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/google-polyline/-/google-polyline-1.0.3.tgz#b1fafd8841059f7049d4ba6767c386be979510dc"
@@ -299,7 +316,7 @@ gps-distance@0.0.4:
   resolved "https://registry.yarnpkg.com/gps-distance/-/gps-distance-0.0.4.tgz#f0b4a8172c668fdec065291a4999b961f1916d10"
   integrity sha1-8LSoFyxmj97AZSkaSZm5YfGRbRA=
 
-hafas-client@^5.3.0:
+hafas-client@^5.7.0:
   version "5.7.0"
   resolved "https://registry.yarnpkg.com/hafas-client/-/hafas-client-5.7.0.tgz#4cc0b8ae19ffe62184a15a72c85d7e04e48cf10c"
   integrity sha512-1rKYyIEKI7LaNZiJu5O/PNNKML1709S6/c/fcgCwKlALAyIP3s0D5LGRy5n0b4UFJU2zmqxRrdNGCL+LzEY2tg==
@@ -324,23 +341,27 @@ hafas-client@^5.3.0:
     vbb-stations "^7.1.0"
     vbb-translate-ids "^4.0.0"
 
-hafas-rest-api@^2.1.3:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/hafas-rest-api/-/hafas-rest-api-2.1.4.tgz#bace46b4dd5995355ab312434a2f18cb2c1e6c5e"
-  integrity sha512-JlkWt0oOGiLP6xME01/ks5jopvyQZjv+GvCv1MgV10fBMxSNOJoPfInhAKXKqErFcacytJMpP3AgeImEjO4X4g==
+hafas-rest-api@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/hafas-rest-api/-/hafas-rest-api-3.4.0.tgz#a7e29ba4af31e99e42495c4e77813fc77bb1889b"
+  integrity sha512-jaB2nrrUTJCfbspNPSkAQ9MGiU8p96IFdbw60HpgIv15I6ICws8RErd5ttirLpjo6ypPwjdK0VY/apfWE1Ev1A==
   dependencies:
     compression "^1.7.2"
     cors "^2.8.4"
+    date-fns "^2.12.0"
     express "^4.16.2"
     express-pino-logger "^4.0.0"
+    github-slugger "^1.3.0"
     hsts "^2.1.0"
+    http-link-header "^1.0.2"
+    lodash "^4.17.15"
     luxon "^1.21.1"
     markdown-it "^10.0.0"
-    nocache "^2.0.0"
+    on-headers "^1.0.2"
     parse-human-relative-time "^2.0.2"
     pino "^5.11.3"
     shorthash "0.0.2"
-    stringify-entities "^2.0.0"
+    stringify-entities "^3.0.0"
 
 hash-base@^3.0.0:
   version "3.1.0"
@@ -379,6 +400,11 @@ http-errors@~1.7.2:
     setprototypeof "1.1.1"
     statuses ">= 1.5.0 < 2"
     toidentifier "1.0.0"
+
+http-link-header@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/http-link-header/-/http-link-header-1.0.2.tgz#bea50f02e1c7996021f1013b428c63f77e0f4e11"
+  integrity sha512-z6YOZ8ZEnejkcCWlGZzYXNa6i+ZaTfiTg3WhlV/YvnNya3W/RbX1bMVUMTuCrg/DrtTCQxaFCkXCz4FtLpcebg==
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -437,7 +463,7 @@ lodash.get@^4.4.2:
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
-lodash@^4.17.5:
+lodash@^4.17.15, lodash@^4.17.5:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -519,11 +545,6 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-nocache@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/nocache/-/nocache-2.1.0.tgz#120c9ffec43b5729b1d5de88cd71aa75a0ba491f"
-  integrity sha512-0L9FvHG3nfnnmaEQPjT9xhfN4ISk0A8/2j4M37Np4mcDesJjHgEUfgPhdCyZuFI954tjokaIj/A3NdpFNdEh4Q==
-
 node-fetch@~2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
@@ -546,7 +567,7 @@ on-finished@~2.3.0:
   dependencies:
     ee-first "1.1.1"
 
-on-headers@~1.0.2:
+on-headers@^1.0.2, on-headers@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/on-headers/-/on-headers-1.0.2.tgz#772b0ae6aaa525c399e489adfad90c403eb3c28f"
   integrity sha512-pZAE+FJLoyITytdqK0U5s+FIpjN0JP3OzFi/u8Rx+EV5/W+JTWGXG8xFzevE7AjBfDqHv/8vL8qQsIhHnqRkrA==
@@ -774,10 +795,10 @@ string_decoder@^1.1.1:
   dependencies:
     safe-buffer "~5.2.0"
 
-stringify-entities@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/stringify-entities/-/stringify-entities-2.0.0.tgz#fa7ca6614b355fb6c28448140a20c4ede7462827"
-  integrity sha512-fqqhZzXyAM6pGD9lky/GOPq6V4X0SeTAFBl0iXb/BzOegl40gpf/bV3QQP7zULNYvjr6+Dx8SCaDULjVoOru0A==
+stringify-entities@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/stringify-entities/-/stringify-entities-3.0.1.tgz#32154b91286ab0869ab2c07696223bd23b6dbfc0"
+  integrity sha512-Lsk3ISA2++eJYqBMPKcr/8eby1I6L0gP0NlxF8Zja6c05yr/yCYyb2c9PwXjd08Ib3If1vn1rbs1H5ZtVuOfvQ==
   dependencies:
     character-entities-html4 "^1.0.0"
     character-entities-legacy "^1.0.0"

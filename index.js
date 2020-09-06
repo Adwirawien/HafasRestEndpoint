@@ -91,6 +91,43 @@ const configs = [
     port: 3014,
     provider: "VMT (Verkehrsverbund Mittelthüringen)",
     profile: require("hafas-client/p/vmt")
+  },
+  // new providers
+  {
+    hostname: "sncb.transportflow.online",
+    port: 3015,
+    provider: "SNCB (Belgien)",
+    profile: require("hafas-client/p/sncb")
+  },
+  {
+    hostname: "rsag.transportflow.online",
+    port: 3016,
+    provider: "RSAG (Rostocker Straßenbahn AG)",
+    profile: require("hafas-client/p/rsag")
+  },
+  {
+    hostname: "zvv.transportflow.online",
+    port: 3017,
+    provider: "ZVV (Zürcher Verkehrsverbund)",
+    profile: require("hafas-client/p/zvv")
+  },
+  {
+    hostname: "svv.transportflow.online",
+    port: 3018,
+    provider: "SVV (Salzburger Verkehrsverbund)",
+    profile: require("hafas-client/p/svv")
+  },
+  {
+    hostname: "sbm.transportflow.online",
+    port: 3019,
+    provider: "SBM (S-Bahn München)",
+    profile: require("hafas-client/p/sbahn-muenchen")
+  },
+  {
+    hostname: "pkp.transportflow.online",
+    port: 3020,
+    provider: "PKP (Polen)",
+    profile: require("hafas-client/p/pkp")
   }
 ];
 

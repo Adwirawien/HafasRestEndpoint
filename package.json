@@ -7,7 +7,7 @@
   "author": "Adwirawien <hannsadrian@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "hafas-client": "^5.7.0",
+    "hafas-client": "^5.8.0",
     "hafas-rest-api": "3.4.0"
   }
 }
